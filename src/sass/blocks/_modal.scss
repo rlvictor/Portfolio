@@ -1,0 +1,45 @@
+.modal__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: #e1e1e1;
+    padding: 38px 40px 40px 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    z-index: 5;
+    &__close {
+      position: absolute;
+      top: 7px;
+      right: 16px;
+      font-size: 41px;
+      line-height: 21px;
+      color: $main_color;
+      cursor: pointer;
+      &:hover {
+        color: darkblue;
+      }
+    }
+    &__tittle {
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      color: #4b4b4b;
+    }
+    &__descr {
+      margin-top: 25px;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      color: #0d0d0d;
+    }
+  }
+}
