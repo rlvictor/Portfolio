@@ -1,17 +1,16 @@
 .promo {
-  min-height: 100vh;
   position: relative;
   background: linear-gradient(
     223deg,
     rgb(0, 4, 173) 0px,
     rgba(255, 255, 255, 1) 100%
   );
-  padding-top: 206px;
+  padding: 20px 0;
   &__greeting-wrapper {
     position: relative;
     width: 280px;
     height: 60px;
-    margin: 0 auto 30px 290px;
+    margin: 20px auto;
   }
 
   &__greeting-shadow {
@@ -23,7 +22,6 @@
     border: 1px solid #000;
     border-radius: 5px;
     background: #000;
-    // z-index: 1;
   }
   &__greeting-bg {
     height: 52px;
@@ -35,14 +33,12 @@
     transform: skewX(345deg);
     border: 1px solid black;
     border-radius: 5px;
-    // z-index: 2;
   }
   &__greeting {
     width: 255px;
     height: 60px;
     position: absolute;
     top: -4px;
-    // z-index: 3;
 
     h3 {
       font-size: 26px;
@@ -58,14 +54,16 @@
   }
 
   &__img {
+    display: none;
+    height: 100%;
     position: absolute;
-    top: 10%;
+    top: 0;
     left: -5%;
 
     img {
       display: block;
       margin: 0 auto;
-      height: 90vh;
+      height: 100%;
     }
   }
   &__subtittle {
@@ -92,14 +90,13 @@
     }
     &-fz48 {
       margin-top: 10px;
-      font-size: 48px;
+      font-size: 35px;
       line-height: 60px;
     }
   }
   &__btns {
     position: relative;
-    margin-top: 25px;
-    margin-left: 300px;
+    margin: 25px auto;
     display: flex;
     width: 295px;
     align-items: baseline;
@@ -116,16 +113,15 @@
     border: 1px solid #000;
     border-radius: 5px;
     background: #000;
-    // z-index: 1;
   }
   &__btn-left-bg {
     width: 135px;
     height: 45px;
     padding: 12px 25px;
     position: absolute;
-    // z-index: 2;
+
     background: $main_color;
-    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
     transform: skewX(345deg);
     border: 1px solid #000;
     border-radius: 5px;
@@ -140,7 +136,6 @@
     border: 1px solid #000;
     border-radius: 5px;
     background: #000;
-    // z-index: 1;
   }
   &__btn-right-bg {
     width: 135px;
@@ -148,15 +143,12 @@
     padding: 12px 25px;
     position: absolute;
     left: 160px;
-    // z-index: 2;
+
     background: $main_color;
-    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
     transform: skewX(345deg);
     border: 1px solid #000;
     border-radius: 5px;
-    &:hover {
-      background: white;
-    }
   }
 
   &__link {

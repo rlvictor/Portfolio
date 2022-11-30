@@ -1,16 +1,3 @@
-@media (max-width: 1500px) {
-  .promo {
-    &__greeting-wrapper {
-      margin-left: 35%;
-    }
-    &__tittle {
-      margin-left: 35%;
-    }
-    &__btns {
-      margin-left: 35%;
-    }
-  }
-}
 @media (max-width: 1300px) {
   .sidepanel {
     display: none;
@@ -19,17 +6,6 @@
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
-  }
-  .promo {
-    &__greeting-wrapper {
-      margin-left: 40%;
-    }
-    &__tittle {
-      margin-left: 40%;
-    }
-    &__btns {
-      margin-left: 40%;
-    }
   }
 
   .about {
@@ -93,28 +69,16 @@
     }
   }
 }
+
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
   }
-  .promo {
-    &__tittle {
-      width: 450px;
-      margin-left: 40%;
-      &-fz48 {
-        font-size: 40px;
-        line-height: 50px;
-      }
-    }
-    &__btns {
-      margin-left: 40%;
-    }
-    &__img {
-      width: 68%;
-      left: -20%;
-    }
-  }
+
   .about {
+    &__img {
+      grid-row: 1/2;
+    }
     &__wrapper {
       grid-template-columns: 300px 380px;
     }
@@ -178,19 +142,11 @@
     max-width: 540px;
   }
   .promo {
-    &__greeting-wrapper {
-      margin-left: 250px;
-    }
     &__tittle {
-      margin-left: 250px;
-      width: 300px;
       &-fz48 {
         line-height: 39px;
         font-size: 33px;
       }
-    }
-    &__btns {
-      margin-left: 250px;
     }
   }
   .about {
@@ -202,7 +158,7 @@
       grid-row: unset;
       img {
         height: 400px;
-        // width: unset;
+
         object-fit: contain;
       }
     }
@@ -248,13 +204,11 @@
     &__wrapper {
       margin-top: 20px;
       justify-content: center;
-      // row-gap: 0;
     }
   }
   .contacts {
     &__form {
       grid-template: 45px 45px 195px / repeat(2, 265px);
-      // column-gap: 0;
     }
     &__input {
       grid-column: 1/3;
@@ -270,8 +224,8 @@
 @media (max-width: 576px) {
   .container {
     width: 100%;
-    min-height: 320px;
-    padding: 0 10px;
+
+    padding: 30px 10px;
   }
   .hamburger {
     right: 20px;
@@ -286,10 +240,11 @@
     }
   }
   .promo {
+    padding: 0;
     &__greeting-wrapper {
       margin: 30px auto 30px auto;
     }
-    padding-top: 70px;
+
     &__img {
       width: 100%;
       position: inherit;
@@ -304,6 +259,7 @@
       }
     }
     &__tittle {
+      width: 300px;
       margin: 15px auto;
       &-fz48 {
         font-size: 26px;
@@ -329,6 +285,7 @@
     }
   }
   .about {
+    padding: 0;
     &__wrapper {
       grid-template: 340px auto auto / 1fr;
     }
@@ -444,11 +401,7 @@
     }
   }
 }
-@media (max-width: 400px) {
-  .promo {
-    min-height: 830px;
-  }
-}
+
 @media (max-width: 374px) {
   .promo {
     &__tittle-fz48 {

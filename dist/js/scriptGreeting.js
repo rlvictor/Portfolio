@@ -15,13 +15,13 @@ let greeting;
 // }
 
 if (hourNow < 5) {
-  greeting = "Доброй ночи!";
+  greeting = "Доброй ночи !";
 } else if (hourNow < 12) {
-  greeting = "Доброе утро!";
+  greeting = "Доброе утро !";
 } else if (hourNow < 18) {
-  greeting = "Добрый день!";
+  greeting = "Добрый день !";
 } else if (hourNow < 23) {
-  greeting = "Добрый вечер!";
+  greeting = "Добрый вечер !";
 } else {
   greeting = "Приветствую Вас!";
 }
